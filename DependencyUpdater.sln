@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyUpdater", "DependencyUpdater\DependencyUpdater.csproj", "{A6CC1C7C-2CBF-4756-9D85-0990B4845448}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6CC1C7C-2CBF-4756-9D85-0990B4845448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6CC1C7C-2CBF-4756-9D85-0990B4845448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6CC1C7C-2CBF-4756-9D85-0990B4845448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6CC1C7C-2CBF-4756-9D85-0990B4845448}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D8E83AE-6ACD-4D90-94CE-3E463E1C924B}
+	EndGlobalSection
+EndGlobal
