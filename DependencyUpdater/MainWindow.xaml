@@ -15,16 +15,24 @@
             <ColumnDefinition Width="678*"/>
             <ColumnDefinition Width="97*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="Enter_required_nuget_feed_field" HorizontalAlignment="Left" Height="37" Margin="36,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="371" BorderBrush="Black"/>
-        <TextBox HorizontalAlignment="Left" Height="34" Margin="36,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="281" BorderBrush="#FF030303"/>
+        <TextBox x:Name="Enter_required_nuget_feed_version_field" HorizontalAlignment="Left" 
+                 Height="37" Margin="36,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" 
+                 Width="281" BorderBrush="Black" TextChanged="Enter_required_nuget_feed_version_field_TextChanged"
+                 FontSize="14" FontFamily="Verdana" FontWeight="Bold" TextAlignment="Left"
+                 Text="{Binding Feed}"/>
+        <TextBox x:Name="Path_to_code_folder_field" HorizontalAlignment="Left" Height="34" 
+                 Margin="36,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="281" 
+                 BorderBrush="#FF030303" TextChanged="Path_to_code_folder_field_TextChanged"
+                 IsReadOnly="False" Background="Gainsboro" Text="{Binding Path = FolderPath, Mode=OneWay}" />
         <TextBox HorizontalAlignment="Left" Height="97" Margin="420,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" Grid.ColumnSpan="2" BorderBrush="Black"/>
         <Rectangle Fill="#FFF4F4F5" Height="214" Margin="36,147,13,0" Stroke="Black" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-        <Button Content="Update" Margin="639,97.237,0,0" VerticalAlignment="Top" Height="33" HorizontalAlignment="Left" Width="111" Grid.ColumnSpan="2" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="Save" HorizontalAlignment="Left" Margin="523,97.237,0,0" VerticalAlignment="Top" Width="111" Height="33" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="Load" HorizontalAlignment="Left" Margin="407,97.237,0,0" VerticalAlignment="Top" Width="111" Height="33" FontWeight="Bold" Grid.Row="1"/>
-        <Button Content="Browse" HorizontalAlignment="Left" Margin="322,99,0,0" VerticalAlignment="Top" Width="85" Height="34" Click="Button_Click" BorderBrush="#FF0B0B0B" FontWeight="Bold"/>
+        <Button x:Name="Update_button" Content="Update" Margin="639,97.237,0,0" VerticalAlignment="Top" Height="33" HorizontalAlignment="Left" Width="111" Grid.ColumnSpan="2" FontWeight="Bold" Grid.Row="1"/>
+        <!--<Button Content="Save" HorizontalAlignment="Left" Margin="523,97.237,0,0" VerticalAlignment="Top" Width="111" Height="33" FontWeight="Bold" Grid.Row="1"/>-->
+        <!--<Button Content="Load" HorizontalAlignment="Left" Margin="407,97.237,0,0" VerticalAlignment="Top" Width="111" Height="33" FontWeight="Bold" Grid.Row="1"/>-->
+        <Button x:Name="Browse_button" Content="Browse" HorizontalAlignment="Left" Margin="322,99,0,0" VerticalAlignment="Top" Width="85" Height="34" BorderBrush="#FF0B0B0B" FontWeight="Bold" Click="Browse_button_Click"/>
         <Label Content="Nuget feed" HorizontalAlignment="Left" Margin="32,14,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Label Content="Path to work folder" HorizontalAlignment="Left" Margin="32,77,0,0" VerticalAlignment="Top" FontWeight="Bold" RenderTransformOrigin="0.527,1.071"/>
         <Label Content="Do not update" HorizontalAlignment="Left" Margin="415,14,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="Get_version_button" Content="Get" HorizontalAlignment="Left" Margin="322,36,0,0" VerticalAlignment="Top" Width="85" Height="37" BorderBrush="#FF0B0B0B" FontWeight="Bold" Click="Get_version_button_Click"/>
     </Grid>
 </Window>
